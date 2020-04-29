@@ -1,5 +1,8 @@
 实验性项目,勿用于生产环境
 
+效果:
+
+![](https://github.com/jiang111/flutter_hotpatch/raw/master/art/result.gif)
 
 DEMO:
 > 1.下载patch文件夹中的app-release.apk,然后安装至手机,赋予相关的权限
