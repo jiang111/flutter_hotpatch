@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:padding="20dp"
-        android:text="启动Flutter" />
+        android:text="启动老版本" />
 
     <TextView
         android:id="@+id/fix"
