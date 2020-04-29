@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.text.TextUtils;
 
 import java.io.File;
+import java.lang.reflect.Field;
 
 import io.flutter.embedding.engine.loader.FlutterLoader;
 import io.flutter.view.FlutterMain;
@@ -36,6 +37,7 @@ public class FlutterHotPatchManager {
                 activity.runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
+
                         FlutterHotPatchMain.startInitialization(activity.getApplicationContext(), destFile);
                         if (patchInterface != null) {
                             patchInterface.success();
