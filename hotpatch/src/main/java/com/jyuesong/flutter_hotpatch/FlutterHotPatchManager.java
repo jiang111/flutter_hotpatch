@@ -5,6 +5,9 @@ import android.text.TextUtils;
 
 import java.io.File;
 
+import io.flutter.embedding.engine.loader.FlutterLoader;
+import io.flutter.view.FlutterMain;
+
 /**
  * created by NewTab 2020/4/29
  */
