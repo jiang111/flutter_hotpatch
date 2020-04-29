@@ -29,6 +29,7 @@ public class FlutterHotPatchMain {
         } else {
             FlutterHotPatchLoader.getInstance().startInitialization(context, aotFile, new FlutterLoader.Settings());
 
+
         }
 
 
