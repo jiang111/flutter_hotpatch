@@ -19,6 +19,9 @@ allprojects {
         google()
         jcenter()
         maven {
+            url 'E:\\coding\\flutter_hotpatch_module_f\\build\\host\\outputs\\repo'
+        }
+        maven {
             url 'http://download.flutter.io'
         }
     }

@@ -1,2 +1,1 @@
 include ':app', ':hotpatch'
-rootProject.name='flutter_hotpatch'
