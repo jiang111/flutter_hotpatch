@@ -31,18 +31,18 @@ public class App extends Application {
 
             @Override
             public void onActivityStarted(Activity activity) {
-                if (activity instanceof FlutterActivity) {
-                    try {
-                        FlutterActivity flutterActivity = (FlutterActivity) activity;
-                        Method flutterEngineMethod = FlutterActivity.class.getDeclaredMethod("getFlutterEngine");
-                        flutterEngineMethod.setAccessible(true);
-
-                        FlutterEngine flutterEngine = (FlutterEngine) flutterEngineMethod.invoke(flutterActivity);
-                        FlutterHotPatchManager.patchResource(activity, flutterEngine, Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "hotpatch-resource.zip");
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
+//                if (activity instanceof FlutterActivity) {
+//                    try {
+//                        FlutterActivity flutterActivity = (FlutterActivity) activity;
+//                        Method flutterEngineMethod = FlutterActivity.class.getDeclaredMethod("getFlutterEngine");
+//                        flutterEngineMethod.setAccessible(true);
+//
+//                        FlutterEngine flutterEngine = (FlutterEngine) flutterEngineMethod.invoke(flutterActivity);
+//                        FlutterHotPatchManager.patchResource(activity, flutterEngine, Environment.getExternalStorageDirectory().getAbsolutePath() + File.separator + "hotpatch-resource.zip");
+//                    } catch (Exception e) {
+//                        e.printStackTrace();
+//                    }
+//                }
             }
 
             @Override

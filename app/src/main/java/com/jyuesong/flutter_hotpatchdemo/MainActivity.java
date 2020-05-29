@@ -2,6 +2,7 @@ package com.jyuesong.flutter_hotpatchdemo;
 
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
                             @Override
                             public void success() {
                                 Toast.makeText(MainActivity.this, "修复成功", Toast.LENGTH_SHORT).show();
-                                startActivity(FlutterActivity.withNewEngine().build(MainActivity.this));
+                                startActivity(new Intent(MainActivity.this, PatchActivity.class));
 
                             }
 
